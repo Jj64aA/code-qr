@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Genertor Code Qr</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Exo+2&family=Work+Sans:wght@200;300;400;500;600;700;800&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main id="app">
+      <div>
+         <h2>Genertor Code Qr</h2>
+      </div>
+      <div class="g-code-qr">
+          <input id="text-input" type="text">
+          <select class="select" onchange="select_()">
+            <option value="100">100x100</option>
+            <option value="150">150x150</option>
+            <option value="200">200x200</option>
+         </select>
+          <button onclick="click_bt()">Genertor Now</button>
+      </div>
+      <div class="image">
+         <img id="qrcode" src="qr.png" alt="...">
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+</body>
+</html>
