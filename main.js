@@ -14,3 +14,9 @@ function click_bt(){
       qrcode.src = `https://api.qrserver.com/v1/create-qr-code/?size=${select.value}x${select.value}&data=${text.value}`
    };
 }
+
+ let lad = document.querySelector(".lad")
+
+ window.addEventListener("load",function(){
+    lad.style.display = "none"
+ })
